@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIIRE Supermarket</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-main">GIIRE</span>
+            <span class="logo-sub">Supermarket</span>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#offers">Offers</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Welcome to <span>GIIRE Supermarket</span></h1>
+            <p>
+                Your modern supermarket offering food, drinks, cleaning items, and many
+                high-quality products at affordable prices.
+            </p>
+            <a href="#products" class="btn-primary">Shop Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="WhatsApp Image 2025-11-16 at 22.24.48_a8a7a9b1.jpg" alt="Giire Supermarket" />
+            <p> Manager-name:SALIM ABDILADIF MUHUMED </p>
+        </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section id="products" class="section">
+        <h2 class="section-title">Our Products</h2>
+        <p class="section-subtitle">
+            We offer a wide variety of daily fresh and essential household products.
+        </p>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="images/fruits.jpg" alt="Fresh Fruits" />
+                <h3>Fresh Fruits</h3>
+                <p>Bananas, apples, grapes, lemons, and other fresh fruits.</p>
+                <span class="tag">Daily Fresh</span>
+            </div>
+
+            <div class="product-card">
+                <img src="images/vegetables.jpg" alt="Vegetables" />
+                <h3>Vegetables</h3>
+                <p>High-quality vegetables picked from trusted farms.</p>
+                <span class="tag">Organic</span>
+            </div>
+
+            <div class="product-card">
+                <img src="images/drinks.jpg" alt="Soft Drinks" />
+                <h3>Soft Drinks</h3>
+                <p>Juices, soda, water, and energy drinks.</p>
+                <span class="tag">Best Price</span>
+            </div>
+
+            <div class="product-card">
+                <img src="images/groceries.jpg" alt="Groceries" />
+                <h3>Groceries</h3>
+                <p>Rice, sugar, oil, flour, and essential home food supplies.</p>
+                <span class="tag">Essentials</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFFERS SECTION -->
+    <section id="offers" class="section section-alt">
+        <h2 class="section-title">Special Offers</h2>
+        <p class="section-subtitle">
+            Enjoy discount deals and weekly promotions at GIIRE Supermarket.
+        </p>
+
+        <div class="offers-grid">
+            <div class="offer-card">
+                <h3>Weekend Offer</h3>
+                <p>Saturday & Sunday: Get 10% off selected household items.</p>
+            </div>
+            <div class="offer-card">
+                <h3>Family Pack</h3>
+                <p>Big family? Save more with our affordable food bundles.</p>
+            </div>
+            <div class="offer-card">
+                <h3>Loyalty Card</h3>
+                <p>Earn points every time you shop and redeem them for rewards.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <h2 class="section-title">About GIIRE Supermarket</h2>
+        <div class="about-content">
+            <p>
+                GIIRE Supermarket is a modern retail store located in your city,
+                providing fast service, cleanliness, and affordable pricing. Our goal
+                is to make it easy for you to access quality food and household
+                products every day.
+            </p>
+            <p>
+                We take pride in excellent customer service, hygiene, and product
+                variety. Welcome to GIIRE Supermarket — where you get
+                <strong>quality + the best prices</strong>.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section section-alt">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Location & Hours</h3>
+                <p><strong>Address:</strong> GIIRE Supermarket, KAMPALA, UGANDA </p>
+                <p><strong>Phone:</strong> +256 784244155</p>
+                <p><strong>Email:</strong> info@giire-supermarket.com</p>
+                <p><strong>Open:</strong> 7:00 AM – 11:00 PM, Saturday – Friday</p>
+            </div>
+
+            <form class="contact-form">
+                <h3>Send us a message</h3>
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea rows="4" placeholder="Your Message..." required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© <span id="year"></span> GIIRE Supermarket. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
